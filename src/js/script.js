@@ -14,4 +14,21 @@ window.addEventListener('DOMContentLoaded', () => {
             menu.classList.toggle('menu_active');
         })
     })
-})
+});
+
+$(document).ready(function(){
+    $('.carousel__inner').slick({
+        speed: 300,
+        prevArrow: '<button type="button" class="slick-prev"><img src="../icons/left.svg"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="../icons/right.svg"></button>',
+        responsive: [
+            {
+                breakpoin: 768,
+                settings: {
+                    dots: true,
+                    arrows: false
+                }
+            }
+        ]
+    });
+});
