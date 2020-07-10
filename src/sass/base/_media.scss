@@ -25,6 +25,13 @@
     .button_main {
         margin-top: 35px;
     }
+    .carousel {
+        &__item{
+            img {
+                width: 100%;
+            }
+        }
+    }
 }
 @media (max-width: 767px) {
     .title {
