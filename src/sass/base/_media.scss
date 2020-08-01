@@ -10,7 +10,7 @@
         min-height: auto;
         &__wrapper {
             align-items: center;
-            margin-top: 70px;
+            margin-top: 40px;
         }
         &__header {
             font-size: 40px;
@@ -34,89 +34,18 @@
     }
 }
 @media (max-width: 767px) {
+    .header {
+        flex-wrap: wrap;
+        &__official {
+            margin: 20px;
+        }
+      }
+      .promo {
+          background: url(../../img/bg/main_bg_mobile.jpg) center (center/cover) no-repeat;
+      }
     .title {
         font-size: 30px;
         line-height: 33px;
-    }
-    nav {
-        display: block;
-    }
-    .header {
-      flex-wrap: wrap;
-      &__contacts {
-        display: none;
-       }
-    }
-    .hamburger {
-        display: block;
-        position: fixed;
-        z-index: 5;
-        right: 10px;
-        top: 3%;
-        transform: translateY(-50%);
-        width: 26px;
-        height: 12px;
-        span {
-            display: block;
-            height: 2px;
-            width: 100%;
-            background-color: $main-color;
-            margin-bottom: 2px;
-            transition: 0.5s all;
-        }
-        &_active {
-            span {
-                margin-bottom: -2px;
-                &:nth-child(1) {
-                    transform: translateY(3px) rotate(-45deg);
-              }
-                &:nth-child(2) {
-                    display: none;
-                }
-                &:nth-child(3) {
-                    transform: translateY(3px) rotate(45deg);
-                }
-            }
-        }  
-    }
-    .menu {
-        display: flex;
-        position: fixed;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        top: 0;
-        left: -100%;
-        width: 50%;
-        height: 100vh;
-        padding: 20px 15px;
-        transition: 0.6s all;
-        background-color: rgba(0,0,0, .8);
-        &_active {
-            left: 0;
-        }
-        &_item {
-            padding-right: 0;
-            border: none;
-            margin-top: 10px 0;
-            width: 100%;
-            text-align: center;
-            padding: 5px 0;
-        }
-        &_link {
-            display: block;
-            font-size: 20px;
-            color: $main-color;
-        }
-    }
-    .promo {
-        background: url(../../img/bg/main_bg_mobile.jpg) center (center/cover) no-repeat;
-        .button {
-            display: none;
-        }
-        &__link {
-            display: none;
-        }
     }
     .advantages {
         &__wrapper {
@@ -138,6 +67,12 @@
         padding: 70px 0;
         &__desrc {
             margin-top: 50px;
+        }
+    }
+    .catalog {
+        &__tab {
+            width: 165px;
+            font-size: 16px;
         }
     }
 }
@@ -187,6 +122,20 @@
         }
         .feed-form {
             margin-top: 8vh;
+        }
+    }
+    .catalog {
+        &__tabs {
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+        &__tab {
+            width: 220px;
+            font-size: 18px;
+            margin: 7px 0;
+        }
+        &__content {
+            margin-top: 35px;
         }
     }
 }
