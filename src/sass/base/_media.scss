@@ -32,6 +32,11 @@
             }
         }
     }
+    .review {
+        &__info {
+            width: 540px;
+        }
+    }
 }
 @media (max-width: 767px) {
     .header {
@@ -73,6 +78,11 @@
         &__tab {
             width: 165px;
             font-size: 16px;
+        }
+    }
+    .review {
+        &__info {
+            width: 380px;
         }
     }
 }
@@ -136,6 +146,16 @@
         }
         &__content {
             margin-top: 35px;
+        }
+    }
+    .review {
+        &__block {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__info {
+            width: 100%;
+            margin-top: 30px;
         }
     }
 }
