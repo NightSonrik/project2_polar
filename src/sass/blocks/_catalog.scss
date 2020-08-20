@@ -127,11 +127,13 @@
             transform: translateX(0%);
             transition: 0.5s all;
             list-style-type: none;
-            padding-left: 19px;
             margin-bottom: 0px;
             &_active {
                 transform: translateX(-100%);
                 margin-left: 0px;
+            }
+            ul {
+                padding-left: 19px;
             }
             li {
                 position: relative;
@@ -145,8 +147,8 @@
                     width: 5px;
                     height: 5px;
                     background-color: $main-color;
-                    left: -14px;
-                    top: 7px;
+                    left: -16px;
+                    top: 8px;
                 }
             }
         }

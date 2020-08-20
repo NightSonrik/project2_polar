@@ -6,19 +6,7 @@
         justify-content: space-around;
     }
     .consultation {
-        h2 {
-            text-align: center;
-            br {
-                display: none;
-            }
-        }
-        &__descr {
-            text-align: center;
-        }
-        .feed-form {
-            margin: 0 auto;
-            margin-top: 36px;
-        }
+        padding: 90px 20px;
     }
     .promo {
         padding-bottom: 50px;
@@ -55,12 +43,26 @@
             justify-content: space-around;
         }
     }
+    .footer {
+        &__info {
+            width: 320px;
+            height: 190px;
+            padding: 20px;
+        }
+        &__addr {
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+        &__phone {
+            margin-bottom: 20px;
+        }
+    }
 }
 @media (max-width: 767px) {
     .header {
         flex-wrap: wrap;
         &__official {
-            margin: 20px;
+            display: none;
         }
       }
       .promo {
@@ -87,9 +89,20 @@
         }
     }
     .consultation {
-        padding: 70px 0;
-        &__desrc {
+        padding: 70px 1vh;
+        &__descr {
             margin-top: 50px;
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+            br {
+                display: none;
+            }
+        }
+        .feed-form {
+            margin: 0 auto;
+            margin-top: 36px;
         }
     }
     .catalog {
@@ -99,8 +112,30 @@
         }
     }
     .review {
+        &__block {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
         &__info {
-            width: 380px;
+            width: 500px;
+            margin-top: 30px;
+            padding: 0 10px;
+            text-align: center;
+            line-height: 20px;
+        }
+    }
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+        &__info {
+            order: 0;
+            position: static;
+            transform: none;
+            left: 0;
+            width: 100%;
+        }
+        &__map {
+            order: 2;
         }
     }
 }
@@ -113,7 +148,8 @@
         flex-wrap: wrap;
         justify-content: center;
         &__official {
-            margin-top: 20px;
+            display: block;
+            margin: 20px 0;
             text-align: center;
         }
         .menu {
@@ -167,22 +203,8 @@
         }
     }
     .review {
-        &__block {
-            flex-wrap: wrap;
-            justify-content: center;
-        }
         &__info {
             width: 100%;
-            margin-top: 30px;
-            padding: 0 10px;
-            text-align: center;
-            line-height: 20px;
-        }
-    }
-    .footer {
-        &__info {
-            width: 100%;
-            padding: 25px;
         }
     }
 }

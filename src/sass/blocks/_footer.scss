@@ -40,7 +40,8 @@
         border-radius: 100%;
         color: #fff;
         &:hover {
-            color: #fff;
+            background-color: #fff;
+            color: $main-color;
             text-decoration: none;
         }
     }
@@ -49,5 +50,11 @@
         justify-content: space-around;
         width: 210px;
         margin: 0 auto;
+    }
+    &__map {
+        width: 100%;
+        iframe {
+            width: 100%;
+        }
     }
 }
